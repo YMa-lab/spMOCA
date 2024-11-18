@@ -3,7 +3,7 @@
 ## Spatially Informed Matrix Normal Graphical Model for Inferring Gene Co-expression Networks in Spatial Transcriptomics
 
 
-![CARD\_pipeline](spMGM_Logo.png)
+![spMGM\_pipeline](spMGM_Logo.png)
 spMGM is a spatially informed matrix normal graphical model developed to interpret gene co-expression patterns across spatial locations in a biologically meaningful way. spMGM builds upon the principle that gene expression in spatial transcriptomics data is influenced by both spatial covariance and gene covariance, as well as interactions between genes and spatial locations. Using a normalized spatial count matrix as input, spMGM integrates these elements to yield a more accurate and nuanced understanding of gene co-expression networks with spatial contexts. spMGM employs an efficient optimization algorithm for maximum likelihood estimation, which is scalable to datasets with tens of thousands of spatial locations and tens of thousands of genes, surpassing the capabilities of existing methods. spMGM is implemented as an open-source R package, freely available at https://github.com/orgs/YMa-lab/spMGM![image](https://github.com/user-attachments/assets/dc15e2f5-1126-434b-bed7-52254f2fa599)
 
 Installation
