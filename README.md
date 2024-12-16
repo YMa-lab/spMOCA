@@ -19,7 +19,7 @@ You can install the released version of spMGM from Github with the following cod
 install.packages('devtools')
 
 # install the CARD package
-devtools::install_github('YingMa0107/spMGM')
+devtools::install_github('YMa-lab/spMGM')
 
 # load package
 library(spMGM)
