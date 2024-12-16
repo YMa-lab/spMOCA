@@ -8,7 +8,7 @@ spMGM is a spatially informed matrix normal graphical model developed to interpr
 
 Installation
 ------------
-You can install the released version of CARD from Github with the following code, for more installation details or solutions that might solve related issues (specifically MacOS system) see the [link](https://yma-lab.github.io/CARD/documentation/02_installation.html).
+You can install the released version of spMGM from Github with the following code, for more installation details or solutions that might solve related issues (specifically MacOS system) see the [link](https://yma-lab.github.io/CARD/documentation/02_installation.html).
 
 ## Dependencies 
 * R version >= 4.2.2.
@@ -19,10 +19,10 @@ You can install the released version of CARD from Github with the following code
 install.packages('devtools')
 
 # install the CARD package
-devtools::install_github('YingMa0107/CARD')
+devtools::install_github('YingMa0107/spMGM')
 
 # load package
-library(CARD)
+library(spMGM)
 
 ```
 The R package has been installed successfully on Operating systems: 
