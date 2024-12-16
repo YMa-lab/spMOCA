@@ -8,7 +8,7 @@ spMGM is a spatially informed matrix normal graphical model developed to interpr
 
 Installation
 ------------
-You can install the released version of spMGM from Github with the following code, for more installation details or solutions that might solve related issues (specifically MacOS system) see the [link](https://yma-lab.github.io/CARD/documentation/02_installation.html).
+You can install the released version of spMGM from Github with the following code, for more installation details or solutions that might solve related issues (specifically MacOS system) see the [link]().
 
 ## Dependencies 
 * R version >= 4.2.2.
@@ -33,10 +33,10 @@ The R package has been installed successfully on Operating systems:
 # Issues
 All feedback, bug reports and suggestions are warmly welcomed! Please make sure to raise issues with a detailed and reproducible exmple and also please provide the output of your sessionInfo() in R! 
 
-How to cite `CARD`
+How to cite `spMGM`
 -------------------
-Ma, Y., Zhou, X. Spatially informed cell-type deconvolution for spatial transcriptomics. Nat Biotechnol 40, 1349–1359 (2022). https://doi.org/10.1038/s41587-022-01273-7
+
 
 How to use `CARD`
 -------------------
-Details in [Tutorial](https://yma-lab.github.io/CARD/)
+Details in [Tutorial](https://yma-lab.github.io/spMGM/)
