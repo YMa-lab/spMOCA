@@ -37,6 +37,6 @@ How to cite `spMGM`
 -------------------
 
 
-How to use `CARD`
+How to use `spMGM`
 -------------------
 Details in [Tutorial](https://yma-lab.github.io/spMGM/)
