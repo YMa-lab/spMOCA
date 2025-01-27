@@ -1,6 +1,6 @@
 #' The function to estimate the gene covariance by maximizing log-likelihood given a spatial covariance
-#' @param spatialCoord a spot-by-2 spatial coordinate matrix
-#' @param normCount a gene-by-spot normalized matrix count 
+#' @param spatialCoord a location-by-2 spatial coordinate matrix
+#' @param normCount a gene-by-location normalized matrix count 
 #' @param kernelType the type of Spatial Kernel to be constructed. The default is Gaussian
 #' @param kernelBw for constructing a spatial kernel, which type of bandwidth estimation will be used. The default is Rule-Of-Thumb
 #' @return Return a spatial kernel matrix
