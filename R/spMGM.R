@@ -36,7 +36,7 @@ createSpatialKernel = function(spatialCoord,
 }
 
 #' The function to estimate the gene covariance by maximizing log-likelihood given a spatial covariance
-#' @param normCount a gene-by-spot normalized count matrix
+#' @param normCount a gene-by-location normalized count matrix
 #' @param spatialKernel a spatial kernel
 #' @return Return a maximized likelihood gene correlation estimation.
 
