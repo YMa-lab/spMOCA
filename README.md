@@ -1,6 +1,6 @@
 # spMOCA
 
-## SPatially Informed Matrix Normal Model for Performing Gene Co-expression Analysis (spMOCA) in Spatial Transcriptomics
+## SPatially Informed Matrix Normal Model for Performing Gene Co-expression Analysis in Spatial Transcriptomics
 
 
 ![spMGM\_pipeline](spMGM_Logo.png)
