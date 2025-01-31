@@ -1,7 +1,8 @@
-useDynLib(spMGM, .registration=TRUE)
+useDynLib(spMOCA, .registration=TRUE)
 importFrom(Rcpp, evalCpp)
 exportPattern("^[[:alpha:]]+")
 
+import(Rcpp)
 import(Matrix)
 import(reshape2)
 import(data.table)
@@ -11,4 +12,3 @@ import(ggplot2)
 import(WGCNA)
 import(dplyr)
 import(SPARK)
-

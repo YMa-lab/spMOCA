@@ -13,7 +13,7 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 
 // matmult
 arma::mat matmult(const arma::mat& A, const arma::mat& B);
-RcppExport SEXP _spMGM_matmult(SEXP ASEXP, SEXP BSEXP) {
+RcppExport SEXP _spMOCA_matmult(SEXP ASEXP, SEXP BSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -25,11 +25,11 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_spMGM_matmult", (DL_FUNC) &_spMGM_matmult, 2},
+    {"_spMOCA_matmult", (DL_FUNC) &_spMOCA_matmult, 2},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_spMGM(DllInfo *dll) {
+RcppExport void R_init_spMOCA(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }
