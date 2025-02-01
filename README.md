@@ -18,11 +18,11 @@ You can install the released version of spMOCA from Github with the following co
 # install devtools if necessary
 install.packages('devtools')
 
-# install the CARD package
-devtools::install_github('YMa-lab/spMGM')
+# install the spMOCA package
+devtools::install_github('YMa-lab/spMOCA')
 
 # load package
-library(spMGM)
+library(spMOCA)
 
 ```
 The R package has been installed successfully on Operating systems: 
