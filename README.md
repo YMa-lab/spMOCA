@@ -39,4 +39,9 @@ How to cite `spMOCA`
 
 How to use `spMGM`
 -------------------
-Details in [Tutorial](https://yma-lab.github.io/spMGM/)
+
+``` r
+# Download sample data from /Data
+
+
+```
