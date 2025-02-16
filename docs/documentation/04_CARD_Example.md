@@ -154,7 +154,7 @@ ggplot(df.ms,aes(x = x,y = y,color = score)) +
         legend.position="bottom")
 ```
 Here is an example output: 
-![Example_Prop](example_OVCA_ModuleScore_visualization.pdf)
+![Example_Prop](example_OVCA_ModuleScore_visualization.png)
 
 ## 3.3 Gene Set Analysis
 
