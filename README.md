@@ -12,7 +12,7 @@ You can install the released version of spMOCA from Github with the following co
 
 ## Dependencies 
 * R version >= 4.2.2.
-* R packages: Matrix, ggplot2, dplyr, sf, stats, reshape2, gtools, RcppArmadillo, Rcpp
+* R packages: Matrix, ggplot2, dplyr, sf, stats, reshape2, gtools, RcppArmadillo, Rcpp, SPARK, WGCNA, msigdbr, tidyverse
 
 ``` r
 # install devtools if necessary
@@ -26,9 +26,8 @@ library(spMOCA)
 
 ```
 The R package has been installed successfully on Operating systems: 
-* macOS Catalina 10.15, macOS Monterey 12.3.1
-* Ubuntu 18.04.5 LTS (Bionic Beaver) 
-* Windows 10
+* MAC: OSX (15.0.1)
+* Linux: RedHat7
 
 # Issues
 All feedback, bug reports and suggestions are warmly welcomed! Please make sure to raise issues with a detailed and reproducible exmple and also please provide the output of your sessionInfo() in R! 
