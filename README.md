@@ -26,7 +26,7 @@ library(spMOCA)
 
 ```
 The R package has been installed successfully on Operating systems: 
-* MAC: OSX (15.0.1)
+* MAC: Sequoia 15.0.1
 * Linux: RedHat7
 
 # Issues
