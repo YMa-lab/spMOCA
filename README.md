@@ -37,9 +37,9 @@ How to cite `spMOCA`
 -------------------
 
 
-How to use `spMGM`
+How to use `spMOCA`
 -------------------
-
+Details in [Tutorial](https://yma-lab.github.io/CARD/)
 ``` r
 # Download sample data from /Data
 
