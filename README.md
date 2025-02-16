@@ -39,7 +39,7 @@ How to cite `spMOCA`
 
 How to use `spMOCA`
 -------------------
-Details in [Tutorial](https://yma-lab.github.io/CARD/)
+Details in [Tutorial](https://yma-lab.github.io/spMOCA/)
 ``` r
 # Download sample data from /Data
 
