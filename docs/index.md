@@ -2,10 +2,10 @@
 layout: full
 homepage: true
 disable_anchors: true
-description: Spatially Informed Cell Type Deconvolution for Spatial Transcriptomics 
+description: Spatially Informed Matrix Normal Model for Gene Co-expression Analysis in Spatial Transcriptomics
 ---
-## CARD Overview
-![iDEA\_pipeline](Overview1.jpg)
-CARD is a R package developed to perform spatially informed cell type deconvolution for Spatial Transcriptomics. Briefly, CARD is a reference-based deconvolution method that estimates cell type composition in spatial transcriptomics based on cell type specific expression information obtained from a reference scRNA-seq data. A key feature of CARD is its ability to accommodate spatial correlation in the cell type composition across tissue locations, enabling accurate and spatially informed cell type deconvolution as well as refined spatial map construction. CARD relies on an efficient optimization algorithm for constrained maximum likelihood estimation and is scalable to spatial transcriptomics with tens of thousands of spatial locations and tens of thousands of genes. CARD is implemented as an open-source R package, freely available at [www.xzlab.org/software.html](www.xzlab.org/software.html). 
+## spMOCA Overview
+![spMOCA\_pipeline](spMOCA_workflow.png)
+spMOCA is a spatially informed matrix normal model developed to interpret gene co-expression patterns across spatial locations in a biologically meaningful way. spMOCA builds upon the principle that gene expression in spatial transcriptomics data is influenced by both spatial covariance and gene covariance, as well as interactions between genes and spatial locations. Using a normalized spatial count matrix as input, spMOCA integrates these elements to yield a more accurate and nuanced understanding of gene co-expression networks with spatial contexts. spMOCA employs an efficient optimization algorithm for maximum likelihood estimation, which is scalable to datasets with tens of thousands of spatial locations and tens of thousands of genes, surpassing the capabilities of existing methods. spMOCA is implemented as an open-source R package, freely available at https://github.com/orgs/YMa-lab/spMOCA.
 
-### Example Analysis with CARD: [here](https://yma-lab.github.io/CARD/documentation/04_CARD_Example.html).
+### Example Analysis with spMOCA: [here](https://yma-lab.github.io/spMOCA/documentation/04_CARD_Example.html).
