@@ -27,7 +27,7 @@ library(spMOCA)
 ```
 
 This package is supported for MAC and Linux. The package has been tested on the following systems:
-- MAC: OSX (15.0.1)
+- MAC: Sequoia 15.0.1
 - Linux: RedHat7
 
 
