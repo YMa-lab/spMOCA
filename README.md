@@ -36,8 +36,4 @@ All feedback, bug reports and suggestions are warmly welcomed! Please make sure 
 How to use `spMOCA`
 -------------------
 Details in [Tutorial](https://yma-lab.github.io/spMOCA/)
-``` r
-# Download sample data from /Data
 
-
-```
