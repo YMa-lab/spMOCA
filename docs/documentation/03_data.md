@@ -3,15 +3,12 @@ layout: page
 title: Data Input
 description: Link to download the example dataset
 ---
-The following are the links for the example dataset used in the CARD tutorial. 
+The following are the links for the example dataset used in the spMOCA tutorial. 
 
-1. scRNA-seq data
-  * [sc_count](https://github.com/YingMa0107/CARD/blob/master/data/sc_count.RData)
-  * [sc_meta](https://github.com/YingMa0107/CARD/blob/master/data/sc_meta.RData)
   
-2. spatial transcriptomics data  
-  * [spatial_count](https://github.com/YingMa0107/CARD/blob/master/data/spatial_count.RData)
-  * [spatial_location](https://github.com/YingMa0107/CARD/blob/master/data/spatial_location.RData)
+2. 10x Visium OVCA spatial transcriptomics data  
+  * [spatial_count](https://github.com/YMa-lab/spMOCA/blob/main/data/OVCA.10xGenomicsFFPE.count.mat.rds)
+  * [spatial_location](https://github.com/YMa-lab/spMOCA/blob/main/data/OVCA.10xGenomicsFFPE.location.rds)
 
 3. marker gene list for the extension of CARD: CARDfree
-  * [markerList](https://github.com/YingMa0107/CARD/blob/master/data/markerList.RData)
+  * [gene_spark](https://github.com/YMa-lab/spMOCA/blob/main/data/OVCA.10xGenomicsFFPE.spark.gene.txt)
