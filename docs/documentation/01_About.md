@@ -13,4 +13,6 @@ Contact
 -------------------
 if you have questions, feel free to leave messages on the [github issues](https://github.com/YMa-lab/spMOCA/issues) or contact me through email: chichun_tan@brown.edu
 
-
+Our group
+-------------------
+[Ma lab website](https://yingma0107.github.io/team/)
