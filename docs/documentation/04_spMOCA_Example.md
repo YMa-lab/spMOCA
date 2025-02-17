@@ -3,7 +3,7 @@ layout: page
 title: Example Analysis
 description: ~
 ---
-In this vignette, we use the 10x Visium Ovarian Carcinoma data download from [10x Genomics Data Platform](https://www.10xgenomics.com/datasets/human-ovarian-cancer-1-standard). The preprocessed raw count matrix and spatial coordinate data are stored in [Data](https://github.com/YMa-lab/spMOCA/tree/main/data). Before runing the tutorial, make sure that the spMOCA package is installed. Installation instructions see the [link](https://yma-lab.github.io/spMOCA/documentation/02_installation.html)
+In this vignette, we use the 10x Visium Ovarian Carcinoma data download from [10x Genomics Data Platform](https://www.10xgenomics.com/datasets/human-ovarian-cancer-1-standard). The preprocessed raw count matrix and spatial coordinate data are stored in [Data](https://yma-lab.github.io/spMOCA/tree/main/data). Before runing the tutorial, make sure that the spMOCA package is installed. Installation instructions see the [link](https://yma-lab.github.io/spMOCA/documentation/02_installation.html)
 
 ## Required input data
 `spMOCA` requires spatial transcriptomics count data, along with spatial location information as inputs. The example data for runing the tutorial can be downloaded in this [page](https://yma-lab.github.io/spMOCA/documentation/03_data.html)
@@ -156,58 +156,4 @@ ggplot(df.ms,aes(x = x,y = y,color = score)) +
 Here is an example output: 
 ![Example_Prop](example_OVCA_ModuleScore_visualization.png)
 
-## 3.3 Gene Set Analysis
 
-We can further perform a gene set analysis following the instructions in the Method and Material in our [manuscript](link). Specifically, we construct a two-way contingency table by categorizing genes based on their presence in the gene module as hub genes and the corresponding gene set, to measure the odds for genes in the pathways appearing in the gene module. Here we extract the first 100 Gene Ontology gene sets from GSEA database to perform an analysis. 
-
-```r
-library(msigdbr)
-m_df_tumor <- msigdbr(species = "Homo sapiens")
-fgsea_sets <- m_df_tumor %>% 
-  split(x = .$gene_symbol, f = .$gs_name)
-
-all_gs = unique(m_df_tumor[,c("gs_cat","gs_subcat","gs_name")])
-target_gs = all_gs$gs_name[all_gs$gs_cat == "C5"]
-
-fgsea_sets = fgsea_sets[target_gs]
-fgsea_sets = fgsea_sets[1:100] # First 100 Ontology Gene Sets
-
-result = geneSetAnalysis(object = object,
-                         fgsea_sets = fgsea_sets
-                         )
-result$odds[,51:54]
-  GOBP_ACTIVATION_OF_NF_KAPPAB_INDUCING_KINASE_ACTIVITY GOBP_ACTIVATION_OF_PHOSPHOLIPASE_C_ACTIVITY
-1                                              3.440988                                    2.484252
-2                                              9.929616                                          NA
-3                                                    NA                                          NA
-4                                                    NA                                          NA
-5                                                    NA                                          NA
-6                                                    NA                                          NA
-7                                                    NA                                          NA
-  GOBP_ACTIVATION_OF_PHOSPHOLIPASE_D_ACTIVITY GOBP_ACTIVATION_OF_PROTEIN_KINASE_ACTIVITY
-1                                          NA                                  0.9800626
-2                                          NA                                  2.8534508
-3                                          NA                                         NA
-4                                          NA                                         NA
-5                                          NA                                         NA
-6                                          NA                                         NA
-7                                          NA                                  5.7508009
-
-result$pval[,51:54]
-     GOBP_ACTIVATION_OF_NF_KAPPAB_INDUCING_KINASE_ACTIVITY GOBP_ACTIVATION_OF_PHOSPHOLIPASE_C_ACTIVITY
-[1,]                                             0.2670140                                   0.3440511
-[2,]                                             0.1034998                                          NA
-[3,]                                                    NA                                          NA
-[4,]                                                    NA                                          NA
-[5,]                                                    NA                                          NA
-[6,]                                                    NA                                          NA
-[7,]                                                    NA                                          NA
-     GOBP_ACTIVATION_OF_PHOSPHOLIPASE_D_ACTIVITY GOBP_ACTIVATION_OF_PROTEIN_KINASE_ACTIVITY
-[1,]                                          NA                                  1.0000000
-[2,]                                          NA                                  0.1628113
-[3,]                                          NA                                         NA
-[4,]                                          NA                                         NA
-[5,]                                          NA                                         NA
-[6,]                                          NA                                         NA
-[7,]                                          NA                                  0.1680002
-```
