@@ -154,6 +154,6 @@ ggplot(df.ms,aes(x = x,y = y,color = score)) +
         legend.position="bottom")
 ```
 Here is an example output: 
-![Example_Prop](example_OVCA_ModuleScore_visualization.png){width=250}
+![Example_Prop](example_OVCA_ModuleScore_visualization.png)
 
 
