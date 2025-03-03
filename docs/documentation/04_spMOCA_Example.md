@@ -118,7 +118,9 @@ NOC2L   5099.643  280.7110 4818.932 -4538.221 6   NOC2L
 PLEKHN1 5093.970  795.8440 4298.126 -3502.282 2 PLEKHN1
 HES4    5100.408  544.6427 4555.765 -4011.123 4    HES4
 ```
-The output of WGCNA is stored in `object@network`. The table includes the important measurements such as `kTotal` global connectivity/degree, `kWithin` within-module connectivity/degree, `k` module membership and `gene` feature name.
+The output of WGCNA is stored in `object@network`. The table includes the important measurements such as `kTotal` global connectivity/degree, `kWithin` within-module connectivity/degree, `k` module membership and `gene` feature name. We then can visualize Top 1% module hub genes from this GCN:
+
+![Example_Prop](example_OVCA_hubgene_network.png)
 
 ## 3.2 Calculate Network Degree and Module Scores
 
