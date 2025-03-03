@@ -78,7 +78,7 @@ object = featureSelectionSPMOCA(object,
 ```
 The raw spatial data are stored in `object@spatial_countMat` and `object@spatial_location`, the normalized count are stored in `object@spatial_normCount` and the updated selected features are stored in `object@feature_select`. 
 
-# 3. Construct Spatial Kernel and Run `spMOCA` to estimate gene-gene correlation
+### 2. Construct Spatial Kernel and Run `spMOCA` to estimate gene-gene correlation
 This is the essential step to construct spatial kernel and estimate gene-gene correlation given the spatial kernel. A gene-gene correlation matrix is estimated using all selected features.
 
 ```r
@@ -102,9 +102,9 @@ HES4    -0.03762820 -0.029164151  0.003293133  1.00000000
 ```
 The estimated gene-gene correlation matrix is stored in `object@corr_est`, while the spatial kernel is stored in `object@spatial_kernel`
 
-# 3. Downstream analysis on gene co-expression network  
+# Downstream analysis on gene co-expression network  
 
-## 3.1 Extract gene module from gene-gene correlation matrix
+## Extract gene module from gene-gene correlation matrix
 
 We apply [WGCNA](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-559) to extract gene modules. In particular, we use `spMOCA` estimated gene-gene correlation  as an input to perform clustering for genes through WGCNA.
 ```r
@@ -122,7 +122,7 @@ The output of WGCNA is stored in `object@network`. The table includes the import
 
 ![Example_Prop](example_OVCA_hubgene_network.png)
 
-## 3.2 Calculate Network Degree and Module Scores
+## Calculate Network Degree and Module Scores
 
 We can further calculate module scores using top 5% hub genes as representatives. Module score are calculated by average expression level for the representativie genes for each module in each location. The details of module score calculation is in our manuscript [manuscript](link). 
 
