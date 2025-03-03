@@ -108,6 +108,7 @@ The estimated gene-gene correlation matrix is stored in `object@corr_est`, while
 
 We apply [WGCNA](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-559) to extract gene modules. In particular, we use `spMOCA` estimated gene-gene correlation  as an input to perform clustering for genes through WGCNA.
 ```r
+# install.package("WGCNA)
 library(WGCNA)
 #### Perform Module Detection
 object = moduleDetectionspMOCA(object)
