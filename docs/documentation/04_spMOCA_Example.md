@@ -3,7 +3,7 @@ layout: page
 title: Example Analysis
 description: ~
 ---
-In this vignette, we use the 10x Visium Ovarian Carcinoma data download from [10x Genomics Data Platform](https://www.10xgenomics.com/datasets/human-ovarian-cancer-1-standard). The preprocessed raw count matrix and spatial coordinate data are stored in [Data](https://yma-lab.github.io/spMOCA/tree/main/data). Before runing the tutorial, make sure that the spMOCA package is installed. Installation instructions see the [link](https://yma-lab.github.io/spMOCA/documentation/02_installation.html)
+In this vignette, we use the 10x Visium Ovarian Carcinoma data download from [10x Genomics Data Platform](https://www.10xgenomics.com/datasets/human-ovarian-cancer-1-standard). The preprocessed raw count matrix and spatial coordinate data are stored in [Data](https://yma-lab.github.io/spMOCA/documentation/03_data.html). Before runing the tutorial, make sure that the spMOCA package is installed. Installation instructions see the [link](https://yma-lab.github.io/spMOCA/documentation/02_installation.html)
 
 ## Required input data
 `spMOCA` requires spatial transcriptomics count data, along with spatial location information as inputs. The example data for runing the tutorial can be downloaded in this [page](https://yma-lab.github.io/spMOCA/documentation/03_data.html)
