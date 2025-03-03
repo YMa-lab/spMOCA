@@ -10,7 +10,7 @@ You can install the released version of spMOCA from Github with the following co
 
 ## Dependencies 
 * R version >= 4.2.2.
-* R packages: Matrix, ggplot2, dplyr, sf, stats, reshape2, gtools, RcppArmadillo, Rcpp, SPARK, WGCNA, msigdbr, tidyverse
+* R packages: Matrix, ggplot2, dplyr, sf, stats, reshape2, gtools, RcppArmadillo, Rcpp, SPARK, WGCNA, msigdbr, tidyverse, shiny
 
 ``` r
 # install devtools if necessary
