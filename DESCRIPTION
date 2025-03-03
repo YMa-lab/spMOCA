@@ -7,7 +7,7 @@ Author: Chichun Tan
 Maintainer: Chichun Tan <chichun_tan@brown.edu>
 Description: spMOCA is a spatially informed matrix normal model developed to interpret gene co-expression patterns across spatial locations in a biologically meaningful way.
 License: GPL (>= 3)
-Imports: Rcpp (>= 1.0.13-1), Matrix, reshape2, data.table, stats, RcppArmadillo, ggplot2, WGCNA, dplyr, SPARK, msigdbr, tidyverse
+Imports: Rcpp (>= 1.0.13-1), Matrix, reshape2, data.table, stats, RcppArmadillo, ggplot2, dplyr, tidyverse
 LinkingTo: Rcpp, RcppArmadillo
 Encoding: UTF-8
 Suggests: 
