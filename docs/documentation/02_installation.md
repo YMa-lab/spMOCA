@@ -4,11 +4,11 @@ title: Installation
 description: ~
 ---
 
-`CARD` is implemented as an R package, which can be installed from GitHub by:
+`spMOCA` is implemented as an R package, which can be installed from GitHub by:
 
 ### Dependencies 
 * R version >= 4.2.2.
-* R packages: Matrix, ggplot2, dplyr, sf, stats, reshape2, gtools, RcppArmadillo, Rcpp, SPARK, WGCNA, msigdbr, tidyverse
+* R packages: Matrix, ggplot2, dplyr, sf, stats, reshape2, gtools, RcppArmadillo, Rcpp, SPARK, WGCNA, msigdbr, tidyverse, shiny
 
 
 
@@ -17,7 +17,7 @@ description: ~
 install.packages('devtools')
 ```
 
-#### 2. Install `CARD`
+#### 2. Install `spMOCA`
 ```r
 devtools::install_github('YMa-lab/spMOCA')
 ```
